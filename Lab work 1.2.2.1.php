@@ -18,7 +18,9 @@ $d= new dog();
 $M[0] = array(3,null,'apple');
 $M[1]=array ('Apple',$d);
 $M[2]= false;
-var_dump($M)
+var_dump($M);
+echo "<br />";
+$d->golos();
 
  ?>
 
