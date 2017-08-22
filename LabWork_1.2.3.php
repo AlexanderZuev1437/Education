@@ -6,8 +6,8 @@
 <br><br>
 <!Форма для получения данных>
 <form action="LabWork_1.2.3.php" method="GET">
-    Name: <input type=text name=name><br>
-    Возраст: <input type=text name=age><br>
+    Name: <input type=text name=name style="width: 60px "><br>
+    Возраст: <input type=text name=age style="width: 60px "><br>
     <input type=submit value="Отправить">
 </form>
 

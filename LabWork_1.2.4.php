@@ -19,7 +19,7 @@ echo "Маршрут в директорию скрипта " . N, __DIR__, N . 
 
 <form action="LabWork_1.2.4.php" method="GET">
     Введите имя константы:<br>
-    <input type=text name=value><br>
+    <input type=text name=value style="width: 60px "><br>
     <input type=submit value="Проверить">
 </form>
 
