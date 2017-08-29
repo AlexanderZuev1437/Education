@@ -1,15 +1,30 @@
-<!Для распознавания русских символов>
-<meta charset="UTF-8">
-
-
 <?php
+header("Content-Type: text/plain; charset=UTF-8");
 
-/*Создание константы для перехода на новую строку
-  т.к. PHP_EOL отказался работать*/
-define('N', "</br>");
-echo "Lab Work 1." . N .PHP_EOL.PHP_EOL.PHP_EOL.
-    " Proceed math operations on different data types 
-    Comparison float numbers " . N . N;
-
+echo "LabWork 1.3.3".PHP_EOL.
+    "Create simple day checker".PHP_EOL;
+$simpleDay=6;
+switch ($simpleDay){
+    case 1:
+        echo "Понедельник";
+        break;
+    case 2:
+        echo "Вторник";
+        break;
+    case 3:
+        echo "Среда";
+        break;
+    case 4:
+        echo "Четверг";
+        break;
+    case 5:
+        echo "Пятница";
+        break;
+    case 6:
+        echo "Суббота".PHP_EOL."Выходной";
+        break;
+    case 7:
+        echo "Воскресенье".PHP_EOL."Выходной";
+        break;
+}
 ?>
-
