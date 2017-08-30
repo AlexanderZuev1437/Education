@@ -1,10 +1,10 @@
 <?php
 header("Content-Type: text/plain; charset=UTF-8");
 
-echo "LabWork 1.3.3".PHP_EOL.
-    "Create simple day checker".PHP_EOL;
-$simpleDay=6;
-switch ($simpleDay){
+echo "LabWork 1.3.3" . PHP_EOL .
+    "Create simple day checker" . PHP_EOL;
+$simpleDay = 6;
+switch ($simpleDay) {
     case 1:
         echo "Понедельник";
         break;
@@ -21,10 +21,10 @@ switch ($simpleDay){
         echo "Пятница";
         break;
     case 6:
-        echo "Суббота".PHP_EOL."Выходной";
+        echo "Суббота" . PHP_EOL . "Выходной";
         break;
     case 7:
-        echo "Воскресенье".PHP_EOL."Выходной";
+        echo "Воскресенье" . PHP_EOL . "Выходной";
         break;
 }
 ?>
