@@ -13,14 +13,15 @@ $arr = [
 //Рассппечатка массива с выводом ключa
 function printArray($arr)
 {
-        $key = key($arr);
-        echo $key, " => ";
-        for ($i = 0; $i < 3; $i++) {
-            echo $arr[$key][$i], ' | ';
-        }
-        echo N;
+    $key = key($arr);
+    echo $key, " => ";
+    for ($i = 0; $i < 3; $i++) {
+        echo $arr[$key][$i], ' | ';
+    }
+    echo N;
 
 }
+
 //Поиск по ключу
 function searchOfArray($arr, $nick)
 {
@@ -40,9 +41,10 @@ function searchOfArray($arr, $nick)
     }
     echo 'не найдено';
 }
+
 //Вывод изначального массива для наглядности
 echo "Дан массив:", N . N;
-while (key($arr)!=null) {
+while (key($arr) != null) {
     printArray($arr);
     next($arr);
 }
