@@ -22,10 +22,11 @@ class Phone
      * @param array $phoneBook
      * @return Phone
      */
-    public function setPhoneBook (): Phone
+    public function setPhoneBook(): Phone
     {
-        for ($i = 0; $i > 5; $i++) {
-            $this->phoneBook[] = rand(1, 9);
+        for ($i = 0; $i < 5; $i++) {
+            $name=chr(rand(65,90)).chr(rand(65,90)).chr(rand(65,90)).chr(rand(65,90));
+            $this->phoneBook[$name] = rand(0000000, 999999999);
         }
         return $this;
     }
@@ -44,12 +45,7 @@ class Phone
 $phone1 = new Phone('Nokia', '1100', '1');
 $phone2 = new Phone('Apple', 'Phone 3gs', '4');
 
-//var_dump($phone1);
-//echo N;
-//var_dump($phone2);
-//echo N;
-//var_dump($phone1->getPhoneBook());
-$phone1->setPhoneBook();
-var_dump($phone1);
 
+$phone1->setPhoneBook();
+echo '<pre>',print_r($phone1),'</pre>';
 ?>
